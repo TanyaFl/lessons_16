@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Posts with AJAX</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="id-holder">
+            <div>
+                <span>Enter a post ID:</span>
+                <input type="number" min="0" max="100" id="idInput" onchange="onIdChanged()" />
+                <button id="loadPostBtn" onclick="loadPostData()">Load..</button>
+            </div>
+        </div>
+        <div class="post-content-holder">
+            <div id="post-content"></div>
+        </div>
+        <div id="loadPostCommentsBtn-container" style="display: none;">
+            <button id="loadPostCommentsBtn" onclick="loadCommentsData()">Load Comments..</button>
+        </div>
+        <div id="comments-content" style="display: none;">
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
